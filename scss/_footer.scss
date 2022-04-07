@@ -1,32 +1,18 @@
 footer{
-	background-color:black;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1px 30px;
-	div{ h4{
-		color: white;
-		font-family: $fontSecundary;
-		font-size: $textMd;
-	}
-	img{
-		width: 70px;
-		text-align: center;
-	}
-	}
-	section{
-		h4{
-		color: white;
-		font-family: $fontSecundary;
-		font-size: $textMd;
-	}
-	ul{
-		color: white;
-		font-family: $fontSecundary;
-		font-size: $textSm;
-		text-align: center;
-		list-style: none;
-	}
-	}
-}
+background-color: map-get($map:$paleta,$key:'uno');			
+				div{ 
+				@include flex(column, center, center);
+					h3{
+						@include texto($textMd, $fontSecundary, white);
+						text-align: center;
+						}
+					div{
+						display: flex;
+					flex-direction: row;
+					text-decoration: none;
+						}
+					img{
+					width: 70px;
+						}
+				}
+	  }
