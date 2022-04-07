@@ -56,10 +56,22 @@
 		border-color: map-get($map:$paleta,$key:'cinco');
 		margin-bottom: 10px;
 	     } 
+	.tamañoCuadro{
+		width: 80%;
+	}
 @media screen and (max-width: 767px){
 	section{
 	h1{
 		font-size: $textMd;
 	  }
+	 p{
+	 	font-size: $textSm;
            }
+	 }
+	 h3{
+	 	font-size:$textMd;
+	 }
+	 .tamañoCuadro{
+		width: 80%;
+	}
 }
